@@ -25,26 +25,26 @@ moet tekenen op het moment dat de code de doeKeerTwee functie in gaat? of net vo
 
 +-------------+ +-------------+ 
 |    STACK    |	|    HEAP     |	
-|int getallen | | testgetallen|	 ----------------------------------+
-|int i = 0    | |             |	                                   |
-|             | |             |	                                   |
-|             | |             |	                                   |
-|             | |             |	                                   |
-+-------------+ +-------------+	                                   |
-	| getallen = &ARRAY[0]  ( memory location of array[0] )        |
-	|                                                              |
-	+--------------V                                               |
-				+------------------+                               |
-				|  getallen        |                               |
-				| [0]      [1]     |                               |
-				| 5         5	   |                               |
-				+------------------+                               |
-				                                                   |
-				+------------------+                               |
-				|  testgetallen    |   <---------------------------+
-				| [0]      [1]     |
-				| 5         5	   |
-				+------------------+
+|int getallen | | testgetallen|	 ------------------------------+
+|int i = 0    | |             |	                               |
+|             | |             |	                               |
+|             | |             |	                               |
+|             | |             |	                               |
++-------------+ +-------------+	                               |
+	| getallen = &ARRAY[0]  ( memory location of array[0] )    |
+	|                                                          |
+	+--------------V                                           |
+			 +------------------+                              |
+			 |  getallen        |                              |
+			 | [0]      [1]     |                              |
+		     | 5         5	    |                              |
+		     +------------------+                              |
+		                                                       |
+		     +------------------+                              |
+		     |  testgetallen    |   <--------------------------+
+		     | [0]      [1]     |
+		     | 5         5	    |
+		     +------------------+
 				
 --geheugenmodel C
 de globale variabelen testGetal en testGetallen worden beide niet gewijzigd.
