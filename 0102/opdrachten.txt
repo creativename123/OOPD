@@ -1,0 +1,50 @@
+-- geheugenmodel volgoorde
+e)	Globale variabelen plaatsen.
+d)	Stack frame plaatsen.
+f)	Lokale variabelen plaatsen.
+c)	Returnwaarde kopiëren.
+a)	Lokale variabelen een waarde geven.
+b)	Stack frame verwijderen.
+
+--pijl in het geheugenmodel, A & B
+Een pijl in een geheugenmodel betekent dat de waarde van een variabel op een andere geheugen adres zit, deze
+pijl begint bij een variabel en eindigt waar de waarde te vinden is(bijvoorbeeld een array item)
+
+--geheugenmodel doeKeerTwee A & B
+
+"Teken het geheugenmodel op het moment dat doeKeerTwee op regel 4 is uitgevoerd,
+maar het stack frame van deze functie nog niet is verwijderd.", betekent dit dat ik het geheugenmodel
+moet tekenen op het moment dat de code de doeKeerTwee functie in gaat? of net voordat die eruit gaat
+
++-------------+ +-------------+
+|    STACK    |	|    HEAP     |
+|int getal 10 | |int testGetal 5 |
+|             | |             |
++-------------+ +-------------+
+
+
++-------------+ +-------------+ 
+|    STACK    |	|    HEAP     |	
+|int getallen | | testgetallen|	 ----------------------------------+
+|int i = 0    | |             |	                                   |
+|             | |             |	                                   |
+|             | |             |	                                   |
+|             | |             |	                                   |
++-------------+ +-------------+	                                   |
+	| getallen = &ARRAY[0]  ( memory location of array[0] )        |
+	|                                                              |
+	+--------------V                                               |
+				+------------------+                               |
+				|  getallen        |                               |
+				| [0]      [1]     |                               |
+				| 5         5	   |                               |
+				+------------------+                               |
+				                                                   |
+				+------------------+                               |
+				|  testgetallen    |   <---------------------------+
+				| [0]      [1]     |
+				| 5         5	   |
+				+------------------+
+				
+--geheugenmodel C
+de globale variabelen testGetal en testGetallen worden beide niet gewijzigd.
