@@ -1,8 +1,8 @@
-String[] lijst = {"NL 123", "663", "NL 143", "NL 323"};
+String[] lijst = {"NL123", "663", "NL143", "NL323"};
 
 void setup(){
   findInString(lijst, "NL");
-  printArray(placeBeforeEveryIndex(lijst, "NL "));
+  printArray(placeBeforeEveryIndex(lijst, "NL"));
   findInString(lijst, "NL");
 }
 
