@@ -1,11 +1,10 @@
 String[] lijst = {"NL123", "663", "NL143", "NL323"};
 
 void setup(){
-  findInString(lijst, "NL");
-  printArray(placeBeforeEveryIndex(lijst, "NL"));
-  findInString(lijst, "NL");
+  printArray(findInString(lijst, "NL"));
+  placeBeforeEveryIndex(lijst, "NL");
+  printArray(findInString(lijst, "NL"));
 }
-
 
 boolean findInString(String[] stringArray, String keyword){
   for(int i = 0; i < stringArray.length; i++){
