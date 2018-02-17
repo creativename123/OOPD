@@ -1,0 +1,5 @@
+A - functie println wordt niet afgesloten met ')'
+B - ik weet niet wat er in de functie floatDelen gebeurt maar ik ga ervanuit dat er geen float als param mag worden mee gegeven
+C - je mag niet delen door nul
+
+A & B zijn syntax errors en C is een runtime error

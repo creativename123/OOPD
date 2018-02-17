@@ -1,0 +1,2 @@
+- er worden geen params gebruikt, hierdoor krijg je veel variabelen
+- de variabelen worden globaal gewijzigd
