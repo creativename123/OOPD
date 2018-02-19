@@ -1,13 +1,17 @@
 class Slider {
   float x, y, sWidth, sHeight;
-  int indexes, index;
+  int indexes, index, minValue;
 
-  Slider(float x, float y, float sWidth, float sHeight, int indexes) {
+  Slider(float x, float y, 
+    float sWidth, float sHeight, 
+    int minValue, int indexes, int index) {
     this.x = x;
     this.y = y;
     this.sWidth = sWidth;
     this.sHeight = sHeight;
+    this.minValue = minValue;
     this.indexes = indexes;
+    this.index = index;
   }
 
   void drawSlider() {
@@ -35,5 +39,9 @@ class Slider {
     } else {
       return index;
     }
+  }
+
+  int getValue() {
+    return index + minValue;
   }
 }
