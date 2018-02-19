@@ -14,6 +14,8 @@ void setup() {
   slider2 = new Slider((width - 200) / 2, 110, 
     200, 50, 
     0, 10, 5);
+    
+    
 }
 
 void draw() {
@@ -24,4 +26,6 @@ void draw() {
   slider2.drawSlider();
 
   println(slider1.getValue() + "---" + slider2.getValue());
+  println(slider1);
+  println(slider2);
 }
