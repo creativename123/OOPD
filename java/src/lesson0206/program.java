@@ -1,8 +1,8 @@
 package lesson0206;
 
-import tools.tools;
+import static tools.tools.*;
 
-public class program extends tools {
+public class program {
     public static void main(String[] args) {
         School theSchool = new School("ICA");
 
