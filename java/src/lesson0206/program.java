@@ -1,8 +1,8 @@
 package lesson0206;
 
-import static tools.tools.*;
+import processing.core.PApplet;
 
-public class program {
+public class program extends PApplet {
     public static void main(String[] args) {
         School theSchool = new School("ICA");
 

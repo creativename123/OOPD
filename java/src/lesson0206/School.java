@@ -6,5 +6,4 @@ public class School {
     public School(String name) {
         this.name = name;
     }
-
 }
