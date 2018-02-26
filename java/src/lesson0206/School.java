@@ -1,9 +1,10 @@
 package lesson0206;
 
-public class School {
-    public String name;
+class School {
 
-    public School(String name) {
+    String name;
+
+    School(String name) {
         this.name = name;
     }
 }

@@ -1,6 +1,6 @@
 package lesson0206;
 
-public class Student {
+class Student {
     public String name;
     public int number;
     public School school;
