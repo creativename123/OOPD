@@ -1,0 +1,23 @@
+A: class A erft nergens van, dus deze kan weggelaten worden
+
+B:
+    3: goed
+    4: nietgoed
+    5: nietgoed
+    6: goed
+    7: goed
+    8: nietgoed
+    9: goed
+    10: goed
+    11: goed
+
+C:
+    13: A
+    14:
+    15:
+    16: A
+    17: B
+    18:
+    19: A
+    20: B
+    21: C

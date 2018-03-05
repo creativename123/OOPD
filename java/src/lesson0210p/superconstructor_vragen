@@ -1,0 +1,7 @@
+B: Er bestaat altijd een constructor, als je geen constructor expleciet defineerd wordt
+de default constructor aangeroepen; een lege constructor die niets anders doet dan
+het object aanmaken.
+
+C: Je moet de constructor van de super class nog aanroepen met super(); en daarin je parameters meegeven
+
+D: De super constructor moet altijd eerst worden aangeroepen

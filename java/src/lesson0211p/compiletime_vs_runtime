@@ -1,0 +1,9 @@
+Abstract: compile
+Klasse: compule
+Instantie: runtime
+Dynamische type: runtime
+Statische type: runtime
+Geheugenmodel: runtime
+Methode look-up: compile
+Uitvoeren van een programma: runtime
+Controleren van een programma: compile
