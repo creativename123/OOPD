@@ -20,16 +20,18 @@ public class MainApp extends PApplet {
         RadioKnop rk2 = new RadioKnop(this, 100, 50, 40, 40);
         RadioKnop rk3 = new RadioKnop(this, 150, 50, 40, 40);
 
-        rk.voegDoelwitToe(rk2);
-        rk.voegDoelwitToe(rk3);
-        rk2.voegDoelwitToe(rk);
-        rk2.voegDoelwitToe(rk3);
-        rk3.voegDoelwitToe(rk);
-        rk3.voegDoelwitToe(rk2);
-
         knoppenLijst.add(rk);
         knoppenLijst.add(rk2);
         knoppenLijst.add(rk3);
+
+        for (IDoelwit knop : knoppenLijst) {
+            for (IDoelwit knop2 : knoppenLijst) {
+                if (knop != knop2) {
+                    ((RadioKnop) knop).voegDoelwitToe(knop2);
+                }
+            }
+        }
+
     }
 
     public void draw() {
