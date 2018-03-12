@@ -1,0 +1,7 @@
+een OOP concept
+iets visueels
+connetie
+
+
+bij het overschijven van een methode kan er een probleem ontstaan als er meerde extends worden gebruikt
+
