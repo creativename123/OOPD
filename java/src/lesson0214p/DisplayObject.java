@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 import java.util.ArrayList;
 
-public abstract class DisplayObject extends PApplet {
+public abstract class DisplayObject {
     private ArrayList<IReactor> reactorList = new ArrayList<>();
     float xPos;
     float yPos;
